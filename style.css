@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+    margin: 0;padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+/* TOP NAVBAR STYLE */
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(73, 73, 73, 0.877);
+    color: white;
+    padding: 5px 40px;
+}
+/* LOGO */
+.website-logo img{
+    height: 65px;
+    cursor: pointer;
+}
+/* NAVBAR */
+.navbar{
+    position: relative;
+    left: 130px;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 50%;
+}
+
+
+li{
+    position: relative;
+}
+
+li::before{
+    width: 0%; 
+    height: 2px ;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: " ";
+    border: 1rem;
+    transition: all 250ms;
+}
+
+li:hover::before{
+    width: 100%;
+}
+.nav-left-side{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+/* SEARCH BUTTON  */
+.search-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 2px 4px;
+    color: white;
+    border: 1px solid;
+}
+.search-button span{
+    font-size: 28px;
+}
+.search-button label input{
+    color: white;
+    padding: 6px;
+    border: none;
+    background-color: transparent;
+    outline: 0;
+}
+.search-button label input::placeholder{
+    color: #fff;
+}
+/* SIGNIN BUTTTON  */
+.signin-btn{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 4px;
+    background-color: rgb(63, 152, 242);
+}
+
+/* BANNER STYLE */
+.website-banner{
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.website-banner span{
+    display: block;
+    font-size: 150px;
+}
+/* LEFT SIDE  */
+.port{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: end;
+    box-sizing: border-box;
+    padding: 0 30px;
+    position: relative;
+}
+.port p{
+    padding: 0 30px;
+    width: 300px;
+    position: relative;
+    left: 23rem;
+}
+/* RIGHT SIDE  */
+.folio{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    box-sizing: border-box;
+    padding: 100px 0  0 20px;
+    
+}
+.read-btn{
+    display: inline-block;
+    border: 2px solid;
+    background: transparent;
+    padding: 1rem;
+    font-size: 1rem;
+    position: relative;
+    font-weight: 700;
+    left: 1rem;
+}
